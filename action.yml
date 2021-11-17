@@ -23,7 +23,7 @@ inputs:
     required: false
   ebook_main_adoc_file:
     description: 'Defines the name of the main AsciiDoc file that will be used if you are generating an ebook in PDF or any other supported format. For instance, if the main ebook file is "ebook.adoc", just inform "ebook" here.'
-    default: 'index'
+    default: 'README'
     required: false
   slides_build:
     description: 'Defines if a slides.html file should be built using AsciiDoc Reveal.js. The slides.html file is generated inside the gh-pages branch.'
@@ -31,7 +31,7 @@ inputs:
     required: false
   slides_main_adoc_file:
     description: 'Defines the name of the main AsciiDoc file that will be used if you are generating slides with Reveal.js. For instance, if the slides file is "slides.adoc", just inform "slides" here.'
-    default: 'index'
+    default: 'README'
     required: false
   slides_skip_asciidoctor_build:
     description: 'If slides are being generated using AsciiDoc Reveal.js, you may not want to build the regular html files using the asciidoctor command, but just using the asciidoctor-revealjs command. In order to generate only the slides.html instead of the regular html files, set this config to true.'
