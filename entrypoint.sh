@@ -50,8 +50,8 @@ if [[ $INPUT_SLIDES_SKIP_ASCIIDOCTOR_BUILD == false ]]; then
     echo "Converting AsciiDoc files to HTML"
     find . -name "*$INPUT_ADOC_FILE_EXT" | xargs asciidoctor -b html $INPUT_ASCIIDOCTOR_PARAMS
 
-    for FILE in `find . -name "README.html"`; do 
-        ln -s "README.html" "`dirname $FILE`/index.html"; 
+    for FILE in `find . -name "index.html"`; do 
+        ln -s "index.html" "`dirname $FILE`/index.html"; 
     done
 
     for FILE in `find . -name "*.html"`; do 
